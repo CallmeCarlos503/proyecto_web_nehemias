@@ -1,10 +1,10 @@
-
-html{
+html {
     background-image: url(https://images.alphacoders.com/103/1035818.jpg);
 }
 
 /*todo:titulaciones de las card*/
-.precio-producto,.producto-titulo{
+.precio-producto,
+.producto-titulo {
     font-family: monospace;
     font-size: 15px;
 }
@@ -12,7 +12,7 @@ html{
 
 
 /*! AREA DE BOTONERAS*/
-.btn-compra{
+.btn-compra {
     position: relative;
     padding: 10px;
     border: none;
@@ -27,18 +27,19 @@ html{
 
 
 /* ? AREA DEL SECTION */
-.background{
+.background {
     margin-top: 3%;
     background-image: url(https://wallpaperaccess.com/full/1624847.jpg);
     padding-top: 15%;
     height: auto;
 }
-.titulo{
+
+.titulo {
     color: black;
     position: relative;
     font-size: 100px;
     bottom: 115px;
-    left: 28%; 
+    left: 28%;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -47,8 +48,8 @@ html{
 
 /*! AREA DEL NAVABAR */
 
-.navbar{
-    
+.navbar {
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -56,39 +57,48 @@ html{
     background-color: #0dd065;
     padding: 15px;
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     color: inherit;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.logo{
+
+.logo {
     margin-right: 50%;
 }
-.list{
+
+.list {
     list-style: none;
     display: flex;
     gap: 25px;
 }
-#toggler,.navbar label{
+
+#toggler,
+.navbar label {
     display: none;
 }
-@media screen and (max-width:600px){
-    .menu{
+
+@media screen and (max-width:600px) {
+    .menu {
         width: 100%;
         max-height: 0;
         overflow: hidden;
     }
-    .list{
+
+    .list {
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
-    .navbar label{
+
+    .navbar label {
         display: inline-flex;
         align-items: center;
         padding: 20px;
     }
-    #toggler:checked ~ .menu{
+
+    #toggler:checked~.menu {
         max-height: 100%;
     }
 
@@ -96,11 +106,12 @@ html{
 
 /*! CARDS */
 
-.container{
+.container {
     margin-top: 5%;
     display: flex;
 }
-.card{
+
+.card {
     border-radius: 20px;
     margin-left: 10px;
     height: 250px;
@@ -108,7 +119,82 @@ html{
     flex: 1;
     transition: .3s all ease;
 }
-.card:hover{
+
+.card:hover {
     flex: 2;
-    background-color: rgb(207,207,207);
+    background-color: rgb(207, 207, 207);
+}
+
+/* !footer general*/
+footer {
+    margin-top: 5%;
+    background-color: black;
+    color: #fff;
+    padding: 30px 0;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.container-footer {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    flex: 0 0 33%;
+    max-width: 33%;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: #DF00FF;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    margin-left: 35%;
+    flex-direction: row;
+    grid-row: auto;
+    
+}
+
+.icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.icon:hover{
+    color: #0dd065;
+}
+
+@media(max-width: 991px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
