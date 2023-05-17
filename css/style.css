@@ -1,0 +1,114 @@
+
+html{
+    background-image: url(https://images.alphacoders.com/103/1035818.jpg);
+}
+
+/*todo:titulaciones de las card*/
+.precio-producto,.producto-titulo{
+    font-family: monospace;
+    font-size: 15px;
+}
+
+
+
+/*! AREA DE BOTONERAS*/
+.btn-compra{
+    position: relative;
+    padding: 10px;
+    border: none;
+    background-color: #0099ff;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+/* ? AREA DEL SECTION */
+.background{
+    margin-top: 3%;
+    background-image: url(https://wallpaperaccess.com/full/1624847.jpg);
+    padding-top: 15%;
+    height: auto;
+}
+.titulo{
+    color: black;
+    position: relative;
+    font-size: 100px;
+    bottom: 115px;
+    left: 28%; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/*! AREA DEL NAVABAR */
+
+.navbar{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0dd065;
+    padding: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    margin-right: 50%;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,.navbar label{
+    display: none;
+}
+@media screen and (max-width:600px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        padding: 20px;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+
+}
+
+/*! CARDS */
+
+.container{
+    margin-top: 5%;
+    display: flex;
+}
+.card{
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 250px;
+    background-color: #fff;
+    flex: 1;
+    transition: .3s all ease;
+}
+.card:hover{
+    flex: 2;
+    background-color: rgb(207,207,207);
+}
