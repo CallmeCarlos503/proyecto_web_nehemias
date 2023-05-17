@@ -20,10 +20,10 @@
         <label for="toggler"><i class="ri-menu-line"></i></label>
         <div class="menu">
             <ul class="list">
-                <a href="index.html">
+                <a href="index.php">
                     PRODUCTOS
                 </a>
-                <a href="categorias.html">
+                <a href="categorias.php">
                     CATEGORIAS
                 </a>
                 <a href="">
